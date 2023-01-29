@@ -6,6 +6,7 @@ header {
     justify-content: space-between;
     background-color: rgb(54, 0, 104);
     align-items: center;
+    position:fixed;
 }
 
 .contact {
@@ -22,9 +23,68 @@ header {
     margin: 10px 2px;
 }
 #logo {
-    height: 50px; 
+    height: 60px; 
     width: auto; 
     object-fit: contain; 
     color: white;
     margin-left: 15%;
 }
+
+main {
+    width: 100%;
+}
+.background-img {
+    width: 100%;
+}
+
+
+.profile {
+    width: 150px;
+    height: 150px;
+    border: solid 1px black 30%;
+    border-radius: 50%;
+    position: static;
+}
+
+.profile-name {
+    display: flex;
+    justify-content:space-evenly;
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    height: 80px;
+    text-align: center;
+    align-items: center;
+    font-size: 12px;
+    color: hsl(0, 0%, 97%);
+    background-color: rgb(54, 0, 104);
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
