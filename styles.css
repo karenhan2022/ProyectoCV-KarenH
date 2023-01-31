@@ -1,14 +1,72 @@
 
+* {
+    margin: 0; 
+    padding: 0;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS del Header - Barra superior con logos */
 header {
     width: 100%;
     height: 50px;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(54, 0, 104);
+    /* background-color: rgb(54, 0, 104); */
+    background-color: rgb(10, 13, 50); 
     align-items: center;
 }
 
-.contact {
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 20px 10px 10px; 
+}
+
+nav ul li a {
+    font-size: 15px;
+    color:rgb(200, 200, 200);
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+    color:rgb(180, 245, 83);
+
+
+}
+
+/*
+.menu-list {
+    display: flex;
+}
+
+.menu-list-items {
+    align-items: center;
+    padding: 10px; 
+    list-style-type: none;
+ }
+
+ .menu-list-item {
+    text-decoration: none;
+    color:rgb(200, 200, 200);
+ }
+
+ .fas {
+    color: darkgray;
+ }
+
+ */
+.social {
     display: flex;
     height: 50px;
     margin-right: 5%;
@@ -22,6 +80,11 @@ header {
     margin: 10px 2px;
     background-color: white;
 }
+
+.logos:hover {
+    transform: scale(1.2);
+}
+
 #logoAP {
     height: 36px; 
     width: auto; 
@@ -29,20 +92,24 @@ header {
     margin-left: 25%;
 }
 
-main {
+/* CSS Body - Background y profile */
+
+.main {
     width: 100%;
 }
+
+ 
 .background-img {
     width: 100%;
     margin-top: -4%;
 }
+
 
 .profile {
     display: flex; 
     justify-content: space-evenly;
     align-items: center;
     margin-top: -10%;
-
 }
 
 .profile-photo {
@@ -53,12 +120,17 @@ main {
     margin-top: 40px;
 }
 
+.profile-photo:hover {
+    transform: scale(1.2);
+    transition: 600ms;
+}
+
 .profile-name {
     display: flex;
     flex-direction: column;
     color: rgb(100, 100, 100);
     margin-top: 140px;
-    font-weight: bold;
+
 }
 
 .profile-about {
@@ -70,14 +142,17 @@ main {
 
 } 
 
+/* CSS - Body info */
+
 .titles {
+    color:rgb(100, 100, 100);
     font-size: 30px;
     font-weight: bold;
     margin: 20px 0 20px 20px;
     padding: 10px;
 }
 
-.experience {
+.experience, .skills {
     background-color: rgb(230, 230, 230);
     padding: 20px;
     padding-left: 10%;
@@ -89,49 +164,89 @@ main {
     padding-left: 10%;
 }
 
-.skills {
-    background-color: rgb(230, 230, 230);
-    padding: 20px;
-    padding-left: 10%;
-}
-
 .projects {
     padding: 25px 15%;
     text-align: center;
-
-
 }
 
 .projects-cards {
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
 
 }
 
-.form{
+.card:hover {
+    transform: scale(1.05);
+}
+
+.btn:hover {
+    background-color: rgb(180, 245, 83);
+    color:rgb(100, 100, 100);
+}
+
+/* CSS Contact Form con imagen al costado */
+
+.contactar {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(23, 29, 41);
+}
+
+.form-full {
+    width: 100%;
+    margin-left: 10%;
     display: block; 
     flex-direction: column;
-    margin-left: 40px;
-    /* border:1px solid rgb(54, 0, 104); */
-    padding: 20px;
-    width: 40%;
-    border-radius: 15px;
+}
 
+.form {
+    padding: 10px;
+    width: 80%;
+    border-radius: 10px;
+    border: none;
+}
+
+.form-titles {
+    color: azure;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 40px 0 0 0;
+    padding: 10px;
+}
+
+.form-names {
+    color:rgb(200, 200, 200)
+}
+
+.textarea {
+    padding: 10px;
+    margin: 15px 0; 
+    width: 80%;
+    border-radius: 10px;
 }
 
 .form-button {
-    width: 40%;
-    height: auto;
-    border-radius: 10px;
-    background-color: lightslategray;
+    background-color: rgb(235, 75, 195);
     color: white;
-    padding: 15px;
-    margin: 40px;
+    font-weight: bold;
+} 
+
+.form-button:hover {
+    background-color: rgb(180, 245, 83);
+    color:rgb(100, 100, 100);
+    font-weight: bold;
 }
 
+#form-message {
+    display: none;
+    padding: 25px;
+    margin: 10%; 
+    text-align: center; 
+    width: 80%;
+    border-radius: 15px;
+}
 
-
-
+/* CSS Footer con logo */
 
 footer {
     height: 80px;
@@ -139,22 +254,293 @@ footer {
     align-items: center;
     font-size: 12px;
     color: hsl(0, 0%, 97%);
-    background-color: rgb(54, 0, 104);
+    background-color: rgb(10, 13, 50); 
     padding: 10px;
+    margin-top: -15px;
 }
 
 .logo-footer {
     height: 25px;
     border-radius: 50px;
+}
+
+/* Botón de descarga del CV */
+#btn-download {
+    display:scroll;
+    position:fixed;
+    bottom: 100px;
+    right:30px;
+}
+
+
+/****************** medias querries********************/
+
+/*------------Dispositivos hasta 576px----------------*/
+
+@media only screen and (max-width: 576px) {
+
+
+    nav {
+        display: none;
+    }
+    .background-img {
+        width: 100%;
+        height: 300px;
+    }
+    .profile {
+        width: 100%;
+        display: inline-block;
+        align-items: center;
+        margin-top: -8%;
+    }
+    .profile-photo, .profile-name, .profile-about {
+        align-items: center;
+    }
+
+    #profile-photo {
+        margin: -10% 30% 0; 
+    }
+
+    .profile-name {
+        margin: 30px;
+    }
+
+    .profile-about {
+        margin-left: 0;
+        margin-top: 30px;
+        width: 100%;
+        text-align: center;
+        font-size: medium; 
+        padding: 20px;
+        background-color: rgb(200, 200, 250);
+    }
+
+    .experience, .education, .skills {
+        padding: 4% 10%;
+    }
+
+    .projects-cards {
+        display: inline-block;
+        align-items: center;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .card-text {
+        display: none;
+    }
+
+    .contactar {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .form-image {
+        width: 80%;
+        align-items: center;
+        padding-left: 25%;   
+    }
+
+    footer {
+        width: 100%;
+        font-size: 10px;
+        margin-top: 0px;
+    }
 
 }
 
 
+/*------------Dispositivos hasta 990px----------------*/
+
+
+@media only screen and (min-width: 577px) and (max-width: 989px) {
+
+
+    nav {
+        display: none;
+    }
+    .background-img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .profile {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap ;
+        align-items: center;
+        margin-top: -5%;
+    }
+
+    #profile-photo {
+        margin: -10% 5% 0 5%;
+    }
+
+    .profile-name {
+        margin: 40px 0 0 -20px;
+        padding-top: 20px;   
+    }
+
+    .profile-about {
+        display: inline-block;
+        margin-left: 0;
+        margin-top: 40px;
+        width: 100%;
+        text-align: center;
+        font-size: medium; 
+        padding: 25px;
+        background-color: rgb(200, 200, 250);
+    }
+
+    .experience, .education, .skills {
+        padding: 3% 10%;
+    }
+
+    .projects-cards {
+        width: 100%;
+        display: flex;
+    }
+
+    .card {
+        margin: 10px;
+    }
+
+    .card-title {
+        font-size: medium;
+    }
+
+    .card-text {
+        display: none;
+    }
+
+    .contactar {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .form-image {
+        width: 80%;
+        align-items: center;
+        padding-left: 25%;   
+    }
+
+    footer {
+        width: 100%;
+        margin-top: 0px;
+    }
+}
 
 
 
+/*------------Dispositivos hasta 1200px----------------*/
 
 
+@media only screen and (min-width: 990px) and (max-width: 1200px) {
+
+
+    nav .menu {
+        display: flex;
+    }
+    .background-img {
+        width: 100%;
+    }
+
+    .profile {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: -15%;
+        padding: 20px 0;
+    }
+
+    .profile-about {
+        width: 40%;    
+    }
+
+    .experience, .education, .skills {
+        padding: 3% 10%;
+    }
+
+    .projects-cards {
+        width: 100%;
+        display: flex;
+    }
+
+    .card {
+        margin: 10px;
+    }
+
+    .contactar {
+        width: 100%;
+        display: flex;
+    }
+
+    .form-image {
+        height: 90%;
+    }
+
+    footer {
+        width: 100%;
+        margin-top: 0px;
+    }
+}
+
+
+
+/*------------Dispositivos hasta 1400px----------------*/
+
+
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+
+    nav .menu {
+        display: flex;
+    }
+    .background-img {
+        width: 100%;
+    }
+    .profile {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: -150px;
+        padding: 20px;
+    }
+    .profile-about {
+        padding: 0;
+    }
+    footer {
+        margin-top: -25px;
+        margin-top: 0px;
+    }
+}
+
+/*------------Dispositivos más 1401px----------------*/
+
+@media only screen and (min-width: 1401px) {
+
+    nav .menu {
+        display: flex;
+    }
+
+    .background-img {
+        width: 100%;
+    }
+
+    .profile {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: -150px;
+        padding: 20px;
+    }
+
+    footer {
+        margin-top: 0px;
+    }
+
+}
 
 
 
