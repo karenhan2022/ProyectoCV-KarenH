@@ -279,13 +279,17 @@ footer {
 
 @media only screen and (max-width: 576px) {
 
+    html, body {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
 
     nav {
         display: none;
     }
     .background-img {
         width: 100%;
-        height: 300px;
+        height: 300px;        
     }
     .profile {
         width: 100%;
@@ -311,7 +315,7 @@ footer {
         width: 100%;
         text-align: center;
         font-size: medium; 
-        padding: 20px;
+        padding: 20px;        
         background-color: rgb(200, 200, 250);
     }
 
@@ -356,6 +360,11 @@ footer {
 
 
 @media only screen and (min-width: 577px) and (max-width: 989px) {
+
+    html, body {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
 
 
     nav {
@@ -431,7 +440,6 @@ footer {
         margin-top: 0px;
     }
 }
-
 
 
 /*------------Dispositivos hasta 1200px----------------*/
