@@ -162,9 +162,11 @@
 
             <!--------------Sección de contacto-------------------->
 
+            <!--------------Formulario completo-------------------->
+
             <section id="contact" class="contactar">
                 <div id="form-full" class="form-full">
-                    <h3 class="form-titles">Dejame tu mensaje</h3>
+                    <h3 class="form-titles"><i class="fa fa-fw fa-envelope"></i> Dejame tu mensaje</h3>
                     <form class="formulario form-names">
                         <label for="name" class="form">Nombre / Name</label>
                         <input type="text" class="name form" placeholder="Nombre" required>
@@ -172,17 +174,22 @@
                         <input type="text" class="email form" placeholder="tu-email@email.com">
                         <textarea class="textarea" placeholder="Escribe aquí tu mensaje"></textarea>
                         <input type="submit" id="form-button" class="form form-button" value="Enviar">
+                        <a class="btn btn-primary" id="form-back"><i class="fa-solid fa-angle-left"></i></a>
                     </form>
                 </div>
-                <!--------------Botón de descarga del CV------------------->
-                <div>              
-                    <a class="btn btn-primary" id="btn-download" href="imagenes/CV-Karen.pdf" download>Download</a>  
-                </div>
 
-                <!---------Mensaje que devuelve el formulario-------------->
+                <!---------Mensaje para ver el formulario-------------->
                 <div id="form-message">
-                    <h4 class="form-titles">¡Mensaje enviado con éxito!</h4>
-                    <input type="button" id="form-back" class="form form-button" value="Volver al formulario">         
+                    <!--------------Botón de descarga del CV------------------->
+                    <h4 class="form-titles download-file"><i class="fa-regular fa-file-pdf"></i> Descargar C.V.</h4>      
+                    <a class="btn btn-primary" id="btn-download" href="imagenes/CV-Karen.pdf" download>Download</a>  
+                    
+                    <h4 class="form-titles">Datos de contacto</h4>
+
+                    <p class="text-light"><i class="fa fa-fw fa-phone"></i> Phone: 123-4567-8910</p>
+                    <p class="text-light"><i class="fa-solid fa-at"></i> Email: correo@email.com</p> 
+
+                    <input type="button" id="form-show" class="form form-button" value="Ver el formulario">         
                 </div>  
 
                 <div class="form-img">

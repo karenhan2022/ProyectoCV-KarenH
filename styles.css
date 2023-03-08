@@ -196,7 +196,7 @@ nav ul li a:hover{
 .form-full {
     width: 100%;
     margin-left: 10%;
-    display: block; 
+    display: none; 
     flex-direction: column;
 }
 
@@ -208,6 +208,7 @@ nav ul li a:hover{
 }
 
 .form-titles {
+    font-family: 'Poppins', sans-serif;
     color: azure;
     font-size: 25px;
     font-weight: bold;
@@ -230,6 +231,7 @@ nav ul li a:hover{
     background-color: rgb(235, 75, 195);
     color: white;
     font-weight: bold;
+    margin-top: 5%;
 } 
 
 .form-button:hover {
@@ -239,13 +241,25 @@ nav ul li a:hover{
 }
 
 #form-message {
-    display: none;
-    padding: 25px;
-    margin: 10%; 
-    text-align: center; 
+    display: block;
+    padding: 10px;
+    margin-left: 10%; 
+    text-align: left; 
     width: 80%;
     border-radius: 15px;
 }
+
+.text-light {
+    font-size: 20px;
+    color:antiquewhite;
+    margin-top: 20px;
+}
+
+/* Botón de descarga del CV */
+.download-file {   
+    display: inline-block;
+}
+
 
 /* CSS Footer con logo */
 
@@ -263,14 +277,6 @@ footer {
 .logo-footer {
     height: 25px;
     border-radius: 50px;
-}
-
-/* Botón de descarga del CV */
-#btn-download {
-    display:scroll;
-    position:fixed;
-    bottom: 100px;
-    right:30px;
 }
 
 
