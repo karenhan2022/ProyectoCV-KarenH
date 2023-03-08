@@ -14,6 +14,7 @@
 
 
 // Función para validar los campos del formulario
+
 function validarform() {
     let name;
     let email;
@@ -42,4 +43,15 @@ function validarform() {
         return false;
     }
 
+}
+
+//*Boton flechita de desplazamiento hacia arriba o Scroll-up*
+
+document.getElementById("go-up").addEventListener("click", subir);
+
+function subir(){
+    var desplazamientoActual = document.documentElement.scrollTop;
+    if (desplazamientoActual > 0) {
+        window.scrollTo (0, 0);
+    }
 }

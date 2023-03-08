@@ -87,7 +87,7 @@ nav ul li a:hover{
     height: 30px; 
     width: auto; 
     color: white;
-    margin-left: 40px;
+    margin-left: 50px;
 }
 
 /* CSS Body - Background y profile */
@@ -277,6 +277,13 @@ footer {
 .logo-footer {
     height: 25px;
     border-radius: 50px;
+}
+
+#go-up {
+    position: absolute;
+    margin: -6% 0 0 35%;
+    height: 40px;
+
 }
 
 
