@@ -1,8 +1,6 @@
 
 * {
-    margin: 0; 
-    padding: 0;
-
+    box-sizing: border-box;
 }
 
 html {
@@ -85,11 +83,11 @@ nav ul li a:hover{
     transform: scale(1.2);
 }
 
-#logoAP {
-    height: 36px; 
+#logoK {
+    height: 30px; 
     width: auto; 
     color: white;
-    margin-left: 25%;
+    margin-left: 40px;
 }
 
 /* CSS Body - Background y profile */
@@ -129,6 +127,8 @@ nav ul li a:hover{
     display: flex;
     flex-direction: column;
     color: rgb(100, 100, 100);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
     margin-top: 140px;
 
 }
@@ -136,6 +136,7 @@ nav ul li a:hover{
 .profile-about {
     width: 30%;
     color: rgb(100, 100, 100);
+    font-family: 'Montserrat', sans-serif;
     margin-top: 150px;
     margin-left: 100px;
     padding: 20px;

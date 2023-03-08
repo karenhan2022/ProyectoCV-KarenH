@@ -5,27 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Integrador CV - Karen Hansen</title>
+    <!-- Icono pestaña-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <!-- Hoja de estilos CSS-->
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Estilos de Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
+    <!-- Iconos de fontawesome.com-->
+    <script src="https://kit.fontawesome.com/fb219c69e3.js" crossorigin="anonymous"></script>
+    <!-- Fuentes de Googlefonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!------------Barra superior---------------->
     <header class="sticky-top">
-        <div class="logoAP">
-            <img id="logoAP" src="imagenes/logo-albiceleste.png" alt="Logo de Argentina Programa">
+        <div class="logoK">
+            <img id="logoK" src="imagenes/logoK.png" alt="Logo con la letra K">
         </div>
 
         <!------------Menú de navegación---------------->
-        <nav class="menu">
-            <ul class="menu-list">
-                <li class="menu-list-items"><a class="menu-list-item" href="#home">Home</a></li>
-                <li class="menu-list-items"><a class="menu-list-item" href="#experience">Experience</a></li>
-                <li class="menu-list-items"><a class="menu-list-item" href="#education">Education</a></li>
-                <li class="menu-list-items"><a class="menu-list-item" href="#skills">Skills</a></li>
-                <li class="menu-list-items"><a class="menu-list-item" href="#projects">Projects</a></li>
-                <li class="menu-list-items"><a class="menu-list-item" href="#contact">Contact</a></li>
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="navbar-list-items"><a class="navbar-list-item" href="#home"><i class="fa fa-fw fa-home"></i> Home</a></li>
+                <li class="navbar-list-items"><a class="navbar-list-item" href="#experience"><i class="fa-solid fa-laptop-code"></i> Experience</a></li>
+                <li class="navbar-list-items"><a class="navbar-list-item" href="#education"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+                <li class="navbar-list-items"><a class="navbar-list-item" href="#skills"><i class="fa-regular fa-star"></i> Skills</a></li>
+                <li class="navbar-list-items"><a class="navbar-list-item" href="#projects"><i class="fa-solid fa-code"></i> Projects</a></li>
+                <li class="navbar-list-items"><a class="navbar-list-item" href="#contact"><i class="fa fa-fw fa-envelope"></i> Contact</a></li>
             </ul>
         </nav>
 
@@ -42,10 +55,8 @@
             <div><a href="https://twitter.com"><img class="logos" src="imagenes/twitter.jpg" alt="Logo de Twitter"></a>
             </div>
         </div>
-        
-
+    
     </header>
-
 
     <main>
             <!--------------Imagen de fondo-------------------->
@@ -74,7 +85,7 @@
             <!--------------Info y datos-------------------->
 
             <section id="experience" class="experience bg-body-secondary">
-                <h3 class="titles">Experiencia</h3>
+                <h3 class="titles"><i class="fa-solid fa-laptop-code"></i> Experiencia</h3>
                 <ul>
                     <h4>Globant - (2022-2023)</h4>
                     <li>Front End Developer Jr.</li>
@@ -88,7 +99,7 @@
             </section>
 
             <section id="education" class="education">
-                <h3 class="titles">Estudios</h3>
+                <h3 class="titles"><i class="fa-solid fa-graduation-cap"></i> Estudios</h3>
                 <ul>
                     <h4>Argentina Programa 4.0 - 2023</h4>
                     <li>Desarrollo de páginas web - HTML y CSS</li>
@@ -110,7 +121,7 @@
             </section>
 
             <section id="skills" class="skills">
-                <h3 class="titles">Skills</h3>
+                <h3 class="titles"><i class="fa-regular fa-star"></i> Skills</h3>
                 <ul>
                     <li>HTML & CSS</li>
                     <li>JavaScript</li>
@@ -120,7 +131,7 @@
 
             <!-------------Sección de proyectos------------------>
             <section id="projects" class="projects">
-                <h3 class="titles">Projects</h3>       
+                <h3 class="titles"><i class="fa-solid fa-code"></i> Projects</h3>       
                 <div class="projects-cards"> 
                     <div class="card" style="width: 18rem;">
                         <img src="imagenes/encriptador.jpg" class="card-img-top" alt="Proyecto Encriptador">
