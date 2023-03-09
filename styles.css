@@ -153,8 +153,9 @@ nav ul li a:hover{
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
     font-weight: bold;
-    margin: 20px 0 20px 20px;
+    margin: 20px 0 0 20px 20px;
     padding: 10px;
+
 }
 
 .experience, .skills {
@@ -229,7 +230,7 @@ nav ul li a:hover{
     color:rgb(100, 100, 100);
 }
 
-/* CSS Contact Form con imagen al costado */
+/* CSS Contact Form completo con imagen al costado */
 
 .contactar {
     display: flex;
@@ -238,7 +239,7 @@ nav ul li a:hover{
 }
 
 .form-full {
-    width: 100%;
+    width: 90%;
     margin-left: 10%;
     display: none; 
     flex-direction: column;
@@ -255,8 +256,7 @@ nav ul li a:hover{
     font-family: 'Poppins', sans-serif;
     color: azure;
     font-size: 25px;
-    font-weight: bold;
-    margin: 40px 0 0 0;
+    margin: 40px 0 0 -12px;
     padding: 10px;
 }
 
@@ -276,6 +276,8 @@ nav ul li a:hover{
     color: white;
     font-weight: bold;
     margin-top: 5%;
+    width: 80%;
+
 } 
 
 .form-button:hover {
@@ -383,13 +385,17 @@ footer {
     }
 
     .experience, .education, .skills, .projects {
-        padding: 4% 10%;
+        padding: 4% 8%;
+    }
+
+    .panel-list {
+        width: 100%;
+        margin: 0px;
     }
 
     .projects-cards {
         display: inline-block;
-        align-items: center;
-        
+        align-items: center;       
     }
 
     .card {
@@ -403,6 +409,19 @@ footer {
     .contactar {
         display: inline-block;
         width: 100%;
+    }
+
+
+    #btn-download {
+        margin-top: 15px;
+        width: 80%;
+    }
+
+    .text-light {
+        font-size: 16px;
+        font-weight: lighter;
+        color:antiquewhite;
+
     }
 
     .form-image {
