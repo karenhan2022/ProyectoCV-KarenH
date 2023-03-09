@@ -337,13 +337,15 @@ footer {
 /*------------Dispositivos hasta 576px----------------*/
 
 @media only screen and (max-width: 576px) {
-    /*
 
     html, body {
         max-width: 100% !important;
         overflow-x: hidden !important;
     }
-    */
+
+    #logoK {
+        margin-left: 25px;
+    }
 
     .navbar-list {
         display: none;
@@ -423,11 +425,10 @@ footer {
 
 @media only screen and (min-width: 577px) and (max-width: 989px) {
 
-   /* html, body {
+    html, body {
         max-width: 100% !important;
         overflow-x: hidden !important;
     }
-    */
 
     .navbar-list {
         display: none;
@@ -572,6 +573,11 @@ footer {
 
 @media only screen and (min-width: 1201px) and (max-width: 1400px) {
 
+    html, body {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
     nav .menu {
         display: flex;
     }
@@ -596,6 +602,11 @@ footer {
 /*------------Dispositivos más 1401px----------------*/
 
 @media only screen and (min-width: 1401px) {
+
+    html, body {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
 
     nav .menu {
         display: flex;
