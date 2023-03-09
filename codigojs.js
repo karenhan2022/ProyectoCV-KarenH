@@ -47,14 +47,37 @@ function validarform() {
 
 //*Boton flechita de desplazamiento hacia arriba o Scroll-up*
 
-document.getElementById("go-up").addEventListener("click", subir);
+//document.getElementById("go-up").addEventListener("click", subir);
+
+//function subir(){
+   // let desplazamientoActual = document.documentElement.scrollTop;
+   // if (desplazamientoActual > 0) {
+   //     window.scrollTo (0, 0);
+   // }
+//}
+
+
+let botonSubir = document.getElementById("go-up");
+
+botonSubir.addEventListener("click", subir);
 
 function subir(){
-    var desplazamientoActual = document.documentElement.scrollTop;
+    let desplazamientoActual = document.documentElement.scrollTop;
     if (desplazamientoActual > 0) {
         window.scrollTo (0, 0);
     }
 }
+
+window.onscroll = function() {mostrarBotonSubir()};
+
+function mostrarBotonSubir() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      botonSubir.style.display = "block";
+    } else {
+      botonSubir.style.display = "none";
+    }
+  }
+
 
 
 // Función acordeón para títulos
