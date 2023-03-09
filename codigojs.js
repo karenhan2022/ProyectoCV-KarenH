@@ -45,17 +45,8 @@ function validarform() {
 
 }
 
-//*Boton flechita de desplazamiento hacia arriba o Scroll-up*
 
-//document.getElementById("go-up").addEventListener("click", subir);
-
-//function subir(){
-   // let desplazamientoActual = document.documentElement.scrollTop;
-   // if (desplazamientoActual > 0) {
-   //     window.scrollTo (0, 0);
-   // }
-//}
-
+// Botón Flechita para subir Scroll-top
 
 let botonSubir = document.getElementById("go-up");
 
@@ -71,7 +62,7 @@ function subir(){
 window.onscroll = function() {mostrarBotonSubir()};
 
 function mostrarBotonSubir() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
       botonSubir.style.display = "block";
     } else {
       botonSubir.style.display = "none";
@@ -98,4 +89,14 @@ for (i = 0; i < acc.length; i++) {
         panel.style.display = "block";
       }
   });
+}
+
+
+
+// LocalStorage
+
+if (localStorage.clickcount) {
+  localStorage.clickcount = Number(localStorage.clickcount) + 1;
+} else {
+  localStorage.clickcount = 1;
 }

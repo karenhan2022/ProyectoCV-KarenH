@@ -326,7 +326,7 @@ footer {
 #go-up {
     height: 40px;
     width: 40px;
-    opacity: 50%;
+    opacity: 60%;
     float:right;
     margin: 0 30px 30px 0;
 }
@@ -337,13 +337,15 @@ footer {
 /*------------Dispositivos hasta 576px----------------*/
 
 @media only screen and (max-width: 576px) {
+    /*
 
     html, body {
         max-width: 100% !important;
         overflow-x: hidden !important;
     }
+    */
 
-    nav {
+    .navbar-list {
         display: none;
     }
     .background-img {
@@ -378,13 +380,14 @@ footer {
         background-color: rgb(200, 200, 250);
     }
 
-    .experience, .education, .skills {
+    .experience, .education, .skills, .projects {
         padding: 4% 10%;
     }
 
     .projects-cards {
         display: inline-block;
         align-items: center;
+        
     }
 
     .card {
@@ -420,13 +423,13 @@ footer {
 
 @media only screen and (min-width: 577px) and (max-width: 989px) {
 
-    html, body {
+   /* html, body {
         max-width: 100% !important;
         overflow-x: hidden !important;
     }
+    */
 
-
-    nav {
+    .navbar-list {
         display: none;
     }
     .background-img {
@@ -505,29 +508,37 @@ footer {
 
 
 @media only screen and (min-width: 990px) and (max-width: 1200px) {
-
-
-    nav .menu {
-        display: flex;
-    }
+   
+    /*
     .background-img {
         width: 100%;
+    }
+    */
+    html, body {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
     }
 
     .profile {
         width: 100%;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         margin-top: -15%;
         padding: 20px 0;
     }
 
-    .profile-about {
-        width: 40%;    
+    .profile-photo {
+        margin-left: 40px;
     }
 
-    .experience, .education, .skills {
-        padding: 3% 10%;
+    .profile-name {
+        width: 100%;
+        margin-left: 50px;
+    }
+
+    .profile-about {
+        width: 100%;
+        margin-left: -50px;
     }
 
     .projects-cards {
@@ -540,12 +551,12 @@ footer {
     }
 
     .contactar {
-        width: 100%;
+        width: 110%;
         display: flex;
     }
 
     .form-image {
-        height: 90%;
+        height: 80%;
     }
 
     footer {
@@ -564,9 +575,7 @@ footer {
     nav .menu {
         display: flex;
     }
-    .background-img {
-        width: 100%;
-    }
+
     .profile {
         width: 100%;
         display: flex;
@@ -575,7 +584,8 @@ footer {
         padding: 20px;
     }
     .profile-about {
-        padding: 0;
+        width: 40%;
+        margin-left: -50px;
     }
     footer {
         margin-top: -25px;
@@ -598,9 +608,18 @@ footer {
     .profile {
         width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         margin-top: -150px;
         padding: 20px;
+    }
+
+    .profile-photo {
+        margin-left: 10;
+    }
+
+    .profile-about {
+
+        margin-left: -50px;
     }
 
     footer {
